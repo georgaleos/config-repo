@@ -1,26 +1,26 @@
-spring
-  database
+spring:
+  database:
     driverClassName: "com.mysql.jdbc.Driver"
-  datasource
-    platform:  "mysql"
+  datasource:
+    platform: "mysql"
     url: "jdbc:mysql://localhost:3306/authentication-service?useSSL=false"
     driver-class-name: "com.mysql.jdbc.Driver"
     username: "root"
     password: ""
     testWhileIdle: "true"
     validationQuery: "SELECT 1"
-  jpa
+  jpa:
     #database: "MYSQL"
     # Show or not log for each sql query
     show-sql: "true"
     # Hibernate ddl auto (create, create-drop, update, none, validate)
     ddl-auto: "none"
-    hibernate
+    hibernate:
       # Naming strategy
       naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
-      naming
+      naming:
         implicit-strategy: "org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl"
         physical-strategy: "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy"
-    properties
+    properties:
       # Allows Hibernate to generate SQL optimized for a particular DBMS
       dialect: "org.hibernate.dialect.MySQL5Dialect"
